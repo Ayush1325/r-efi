@@ -19,11 +19,13 @@
 //! rust compiler running in an UEFI environment. Therefore, you will most likely want to cross
 //! compile your rust code for UEFI systems. To do this, you need a target-configuration for UEFI
 //! systems. In case your rust compiler does not provide these, this project has several of them
-//! included. As of February 2019, upstream rust includes the following UEFI targets:
+//! included. As of May 2022, upstream rust includes the following UEFI targets:
 //!
 //!  * `x86_64-unknown-uefi`: A native UEFI target for x86-64 systems. Programs compiled for this
 //!                           target can run natively as UEFI binaries on 64bit Intel-compatible
 //!                           systems.
+//!  * `i686-unknown-uefi`: A native UEFI target for i686 systems.
+//!  * `aarch64-unknown-uefi`: A native UEFI target for aarch64 systems.
 //!
 //! If none of these targets match your architecture, you have to create the target specification
 //! yourself. Feel free to contact the `r-efi` project for help.
